@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minha Conta — Wolschicks Studio</title>
+  <link rel="stylesheet" href="../../css/global.css"/>
+  <link rel="stylesheet" href="../../css/account.css"/>
+</head>
+<body>
+
+  <div class="browser-bar">
+    <div class="b-dots"><div class="b-dot"></div><div class="b-dot"></div><div class="b-dot"></div></div>
+    <div class="b-address"><span class="b-address-inner">my account · orders · downloads · wishlist · profile · settings · wolschicks studio · my account · orders &nbsp;&nbsp;&nbsp;</span></div>
+    <div class="b-squares"><a class="b-sq" href="https://instagram.com" target="_blank"></a><a class="b-sq" href="https://twitter.com" target="_blank"></a><a class="b-sq" href="https://tiktok.com" target="_blank"></a><a class="b-sq" href="https://youtube.com" target="_blank"></a><a class="b-sq" href="https://behance.net" target="_blank"></a><a class="b-sq" href="https://linkedin.com" target="_blank"></a></div>
+  </div>
+
+  <div class="navbar">
+    <div class="nav-browse-wrap">
+      <button class="nav-browse-btn"><span class="nav-browse-icon">☰</span> NAVEGAR CATEGORIAS <span class="nav-browse-arrow">▾</span></button>
+      <div class="nav-dropdown">
+        <a href="../shop/categories.html" class="nav-drop-item">Todas as Categorias <span>›</span></a>
+        <a href="../shop/shop.html?cat=software" class="nav-drop-item">Software <span>›</span></a>
+        <a href="../shop/shop.html?cat=glitch" class="nav-drop-item">Glitch <span>›</span></a>
+        <a href="../shop/shop.html?cat=psd" class="nav-drop-item">Photoshop Arquivos <span>›</span></a>
+        <a href="../shop/shop.html?cat=textures" class="nav-drop-item">Textures &amp; Scans <span>›</span></a>
+        <a href="../shop/shop.html?cat=dither" class="nav-drop-item">Dither Boy</a>
+        <a href="../shop/shop.html?cat=flareware" class="nav-drop-item">Flareware</a>
+      </div>
+    </div>
+    <div class="nav-logo"><a href="../../index.html"><img src="../../assets/logo.png" alt="Wolschicks Studio"/></a></div>
+    <div class="nav-login"><a href="../auth/login.html">★ SAIR ★</a></div>
+  </div>
+
+  <div class="breadcrumb">
+    <a href="../../index.html">Início</a><span>/</span> Minha Conta
+  </div>
+
+  <div class="account-layout">
+
+    <!-- SIDEBAR -->
+    <div class="account-sidebar">
+      <div class="account-sidebar-user">
+        <div class="account-avatar">✦</div>
+        <div class="account-username">Wolschicks User</div>
+        <div class="account-email">user@wolschicks.com</div>
+      </div>
+
+      <nav class="account-nav">
+        <div class="account-nav-title">Navegação</div>
+        <a href="#" class="account-nav-item active" data-panel="overview">
+          <span>◈ Visão Geral</span>
+        </a>
+        <a href="#" class="account-nav-item" data-panel="orders">
+          <span>▣ Pedidos</span>
+          <span class="account-nav-badge">3</span>
+        </a>
+        <a href="#" class="account-nav-item" data-panel="downloads">
+          <span>↓ Downloads</span>
+          <span class="account-nav-badge">12</span>
+        </a>
+        <a href="#" class="account-nav-item" data-panel="wishlist">
+          <span>✦ Lista de Desejos</span>
+          <span class="account-nav-badge">5</span>
+        </a>
+        <a href="#" class="account-nav-item" data-panel="profile">
+          <span>◎ Perfil</span>
+        </a>
+        <a href="#" class="account-nav-item" data-panel="settings">
+          <span>⚙ Configurações</span>
+        </a>
+        <a href="../auth/login.html" class="account-nav-item" style="margin-top:auto;opacity:0.2;">
+          <span>→ Logout</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- MAIN -->
+    <div class="account-main">
+
+      <!-- OVERVIEW -->
+      <div class="account-panel" data-panel="overview">
+        <div class="account-section-title">Visão Geral</div>
+
+        <div class="account-stats">
+          <div class="account-stat">
+            <div class="account-stat-value">3</div>
+            <div class="account-stat-label">Pedidos</div>
+          </div>
+          <div class="account-stat">
+            <div class="account-stat-value">12</div>
+            <div class="account-stat-label">Downloads</div>
+          </div>
+          <div class="account-stat">
+            <div class="account-stat-value">5</div>
+            <div class="account-stat-label">Lista de Desejos</div>
+          </div>
+          <div class="account-stat">
+            <div class="account-stat-value">$148</div>
+            <div class="account-stat-label">Gasto</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="account-section-title">Recent Pedidos</div>
+          <table class="orders-table">
+            <thead>
+              <tr><th>Order</th><th>Date</th><th>Items</th><th>Total</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#WS-0031</td><td>14 Mar 2026</td><td>Signal Collapse Pack</td><td>$14</td>
+                <td><span class="order-status complete">Concluído</span></td>
+              </tr>
+              <tr>
+                <td>#WS-0028</td><td>02 Mar 2026</td><td>Grain Library 01 + Dither Starter</td><td>$18</td>
+                <td><span class="order-status complete">Concluído</span></td>
+              </tr>
+              <tr>
+                <td>#WS-0021</td><td>18 Feb 2026</td><td>Archetype Mockup Vol.3</td><td>$32</td>
+                <td><span class="order-status pending">Pendente</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ORDERS -->
+      <div class="account-panel" data-panel="orders" style="display:none">
+        <div class="account-section-title">My Pedidos</div>
+        <table class="orders-table">
+          <thead>
+            <tr><th>Order</th><th>Date</th><th>Items</th><th>Total</th><th>Status</th><th></th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#WS-0031</td><td>14 Mar 2026</td><td>Signal Collapse Pack</td><td>$14</td>
+              <td><span class="order-status complete">Concluído</span></td>
+              <td><a href="#" class="btn btn-ghost" style="padding:6px 12px;font-size:10px;">Download</a></td>
+            </tr>
+            <tr>
+              <td>#WS-0028</td><td>02 Mar 2026</td><td>Grain Library 01</td><td>$18</td>
+              <td><span class="order-status complete">Concluído</span></td>
+              <td><a href="#" class="btn btn-ghost" style="padding:6px 12px;font-size:10px;">Download</a></td>
+            </tr>
+            <tr>
+              <td>#WS-0021</td><td>18 Feb 2026</td><td>Archetype Mockup Vol.3</td><td>$32</td>
+              <td><span class="order-status pending">Pendente</span></td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- DOWNLOADS -->
+      <div class="account-panel" data-panel="downloads" style="display:none">
+        <div class="account-section-title">Meus Downloads</div>
+        <div class="downloads-list">
+          <div class="download-item">
+            <div class="download-icon">◈</div>
+            <div class="download-info">
+              <div class="download-name">Signal Collapse Pack</div>
+              <div class="download-meta">Glitch · .MOV · 240MB · Comprado em 14 Mar 2026</div>
+            </div>
+            <button class="download-btn">↓ Download</button>
+          </div>
+          <div class="download-item">
+            <div class="download-icon">▦</div>
+            <div class="download-info">
+              <div class="download-name">Grain Library 01</div>
+              <div class="download-meta">Textures · .PNG · 180MB · Comprado em 02 Mar 2026</div>
+            </div>
+            <button class="download-btn">↓ Download</button>
+          </div>
+          <div class="download-item">
+            <div class="download-icon">◎</div>
+            <div class="download-info">
+              <div class="download-name">Solar Flare Starter</div>
+              <div class="download-meta">Lens Flare · .PNG · 45MB · Grátis</div>
+            </div>
+            <button class="download-btn">↓ Download</button>
+          </div>
+          <div class="download-item">
+            <div class="download-icon">▩</div>
+            <div class="download-info">
+              <div class="download-name">Dither Starter Kit</div>
+              <div class="download-meta">Dither Boy · .PNG · 22MB · Grátis</div>
+            </div>
+            <button class="download-btn">↓ Download</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- WISHLIST -->
+      <div class="account-panel" data-panel="wishlist" style="display:none">
+        <div class="account-section-title">My Lista de Desejos</div>
+        <div class="wishlist-grid">
+          <div class="wishlist-card">
+            <button class="wishlist-remove">✕</button>
+            <div class="wishlist-card-img">✦</div>
+            <div class="wishlist-card-info">
+              <div class="wishlist-card-name">Wolschicks Concluído Pacote</div>
+              <div class="wishlist-card-price"><span style="opacity:0.3;text-decoration:line-through;margin-right:6px;font-size:0.8em">$180</span>$89</div>
+            </div>
+          </div>
+          <div class="wishlist-card">
+            <button class="wishlist-remove">✕</button>
+            <div class="wishlist-card-img">▣</div>
+            <div class="wishlist-card-info">
+              <div class="wishlist-card-name">Archetype Mockup Vol.3</div>
+              <div class="wishlist-card-price">$32</div>
+            </div>
+          </div>
+          <div class="wishlist-card">
+            <button class="wishlist-remove">✕</button>
+            <div class="wishlist-card-img">⚙</div>
+            <div class="wishlist-card-info">
+              <div class="wishlist-card-name">GlitchForge Plugin</div>
+              <div class="wishlist-card-price">$48</div>
+            </div>
+          </div>
+          <div class="wishlist-card">
+            <button class="wishlist-remove">✕</button>
+            <div class="wishlist-card-img">◎</div>
+            <div class="wishlist-card-info">
+              <div class="wishlist-card-name">Anamorphic Streaks Vol.1</div>
+              <div class="wishlist-card-price">$36</div>
+            </div>
+          </div>
+          <div class="wishlist-card">
+            <button class="wishlist-remove">✕</button>
+            <div class="wishlist-card-img">◈</div>
+            <div class="wishlist-card-info">
+              <div class="wishlist-card-name">VHS Distortion Loops</div>
+              <div class="wishlist-card-price">$22</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROFILE -->
+      <div class="account-panel" data-panel="profile" style="display:none">
+        <div class="account-section-title">Perfil</div>
+        <div class="profile-grid">
+          <div class="form-group">
+            <label class="label">Nome</label>
+            <input class="input" type="text" value="Wolschicks"/>
+          </div>
+          <div class="form-group">
+            <label class="label">Sobrenome</label>
+            <input class="input" type="text" value="User"/>
+          </div>
+          <div class="form-group">
+            <label class="label">Username</label>
+            <input class="input" type="text" value="@wolschicksuser"/>
+          </div>
+          <div class="form-group">
+            <label class="label">E-mail</label>
+            <input class="input" type="email" value="user@wolschicks.com"/>
+          </div>
+          <div class="form-group full">
+            <label class="label">Bio</label>
+            <input class="input" type="text" placeholder="Conte um pouco sobre você..."/>
+          </div>
+          <div class="form-group">
+            <label class="label">Novo Senha</label>
+            <input class="input" type="password" placeholder="Deixe em branco para manter a atual"/>
+          </div>
+          <div class="form-group">
+            <label class="label">Confirmar Senha</label>
+            <input class="input" type="password" placeholder="Repita a nova senha"/>
+          </div>
+        </div>
+        <div style="margin-top:24px">
+          <button class="btn btn-primary">Salvar Alterações</button>
+        </div>
+      </div>
+
+      <!-- SETTINGS -->
+      <div class="account-panel" data-panel="settings" style="display:none">
+        <div class="account-section-title">Configurações</div>
+        <div style="display:flex;flex-direction:column;gap:16px;max-width:560px">
+          <div class="form-group">
+            <label class="label">Idioma</label>
+            <select class="select" style="width:100%"><option>English</option><option>Português</option></select>
+          </div>
+          <div class="form-group">
+            <label class="label">Moeda</label>
+            <select class="select" style="width:100%"><option>USD ($)</option><option>EUR (€)</option><option>BRL (R$)</option></select>
+          </div>
+          <label class="form-check" style="opacity:0.6">
+            <input type="checkbox" checked/> Receber notificações de pedidos por e-mail
+          </label>
+          <label class="form-check" style="opacity:0.6">
+            <input type="checkbox"/> Receber newsletter
+          </label>
+          <label class="form-check" style="opacity:0.6">
+            <input type="checkbox" checked/> Mostrar perfil publicamente
+          </label>
+          <div style="margin-top:16px;display:flex;gap:10px">
+            <button class="btn btn-primary">Save</button>
+            <button class="btn btn-ghost" style="border:var(--border)">Excluir Conta</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="footer-logo-icon">✦</span><span class="footer-logo-text">wolschicks<br>studio</span></div>
+        <p class="footer-tagline">Obrigado por apoiar o Wolschicks Studio!</p>
+        <p class="footer-email">✉ contact@wolschicks.com</p>
+      </div>
+      <div class="footer-col"><h4 class="footer-col-title">Destaques</h4><a href="#">Lista de Desejos</a><a href="#">Cupons</a><a href="account.html">Minha conta</a><a href="../shop/shop.html">Shop</a></div>
+      <div class="footer-col"><h4 class="footer-col-title">Suporte</h4><a href="#">Fale conosco</a><a href="#">Termos</a><a href="#">Privacidade</a></div>
+      <div class="footer-col"><h4 class="footer-col-title">Encontre-nos</h4><a href="#">Instagram</a><a href="#">Twitter</a><a href="#">Behance</a><a href="#">YouTube</a></div>
+    </div>
+    <div class="footer-bottom"><span>WOLSCHICKS STUDIO LTD</span><div class="footer-payments"><span class="pay-badge">VISA</span><span class="pay-badge">MC</span><span class="pay-badge">PayPal</span></div></div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

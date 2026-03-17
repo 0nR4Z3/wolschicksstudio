@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Em Breve — Wolschicks Studio</title>
+  <link rel="stylesheet" href="../css/global.css"/>
+  <style>
+    .soon-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .soon-main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(40px, 6vw, 100px) clamp(20px, 4vw, 60px);
+      border-bottom: var(--border);
+    }
+    .soon-wrap {
+      width: 100%;
+      max-width: 800px;
+      border: var(--border);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .soon-left {
+      border-right: var(--border);
+      padding: clamp(40px, 5vw, 80px) clamp(28px, 4vw, 56px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .soon-title {
+      font-family: 'AngelicWar', cursive;
+      font-size: clamp(40px, 9vw, 130px);
+      color: var(--white);
+      line-height: 0.88;
+    }
+    .soon-sub {
+      font-size: 10px;
+      color: var(--white);
+      opacity: 0.25;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    .soon-blocks {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .soon-block {
+      border: var(--border);
+      height: clamp(28px, 4vw, 52px);
+    }
+    .soon-block:nth-child(2) { opacity: 0.4; }
+    .soon-block:nth-child(3) { opacity: 0.15; }
+    .soon-right {
+      padding: clamp(40px, 5vw, 80px) clamp(28px, 4vw, 56px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: clamp(20px, 2.5vw, 36px);
+    }
+    .soon-desc {
+      font-size: clamp(12px, 1.1vw, 15px);
+      color: var(--white);
+      opacity: 0.4;
+      line-height: 1.8;
+      letter-spacing: 0.5px;
+    }
+    .soon-counter {
+      display: flex;
+      gap: clamp(12px, 2vw, 24px);
+    }
+    .soon-unit { text-align: center; }
+    .soon-num {
+      font-size: clamp(28px, 5vw, 64px);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+    }
+    .soon-label {
+      font-size: 9px;
+      color: var(--white);
+      opacity: 0.3;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .soon-sep {
+      font-size: clamp(20px, 3vw, 40px);
+      font-weight: 700;
+      color: var(--white);
+      opacity: 0.2;
+      align-self: flex-start;
+      margin-top: clamp(6px, 1vw, 14px);
+    }
+    @media (max-width: 560px) {
+      .soon-wrap { grid-template-columns: 1fr; }
+      .soon-left { border-right: none; border-bottom: var(--border); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="browser-bar">
+    <div class="b-dots"><div class="b-dot"></div><div class="b-dot"></div><div class="b-dot"></div></div>
+    <div class="b-address"><span class="b-address-inner">em breve · wolschicks studio · novidades chegando · em breve · wolschicks studio &nbsp;&nbsp;&nbsp;</span></div>
+    <div class="b-squares"><a class="b-sq" href="https://instagram.com" target="_blank"></a><a class="b-sq" href="https://twitter.com" target="_blank"></a><a class="b-sq" href="https://tiktok.com" target="_blank"></a><a class="b-sq" href="https://youtube.com" target="_blank"></a><a class="b-sq" href="https://behance.net" target="_blank"></a><a class="b-sq" href="https://linkedin.com" target="_blank"></a></div>
+  </div>
+
+  <div class="navbar">
+    <div class="nav-browse-wrap">
+      <button class="nav-browse-btn"><span class="nav-browse-icon">☰</span> NAVEGAR CATEGORIAS <span class="nav-browse-arrow">▾</span></button>
+      <div class="nav-dropdown">
+        <a href="html/shop/categories.html" class="nav-drop-item">Todas as Categorias <span>›</span></a>
+        <a href="html/shop/shop.html" class="nav-drop-item">Loja <span>›</span></a>
+      </div>
+    </div>
+    <div class="nav-logo"><a href="index.html"><img src="assets/logo.png" alt="Wolschicks Studio"/></a></div>
+    <div class="nav-login"><a href="html/auth/login.html">★ ENTRAR / CADASTRO ★</a></div>
+  </div>
+
+  <div class="soon-main">
+    <div class="soon-wrap">
+
+      <div class="soon-left">
+        <div>
+          <div class="soon-title">Em<br>Breve</div>
+          <div class="soon-sub" style="margin-top:14px;">✦ algo novo chegando ✦</div>
+        </div>
+        <div class="soon-blocks">
+          <div class="soon-block"></div>
+          <div class="soon-block"></div>
+          <div class="soon-block"></div>
+        </div>
+      </div>
+
+      <div class="soon-right">
+        <div class="soon-desc">Estamos trabalhando em algo novo. Inscreva-se para ser o primeiro a saber quando lançarmos.</div>
+
+        <div class="soon-counter" id="countdown">
+          <div class="soon-unit"><div class="soon-num" id="cd-days">07</div><div class="soon-label">Dias</div></div>
+          <div class="soon-sep">:</div>
+          <div class="soon-unit"><div class="soon-num" id="cd-hours">14</div><div class="soon-label">Horas</div></div>
+          <div class="soon-sep">:</div>
+          <div class="soon-unit"><div class="soon-num" id="cd-min">32</div><div class="soon-label">Min</div></div>
+          <div class="soon-sep">:</div>
+          <div class="soon-unit"><div class="soon-num" id="cd-sec">00</div><div class="soon-label">Seg</div></div>
+        </div>
+
+        <div style="display:flex;gap:0;border:var(--border);">
+          <input class="input" type="email" placeholder="seu@email.com" style="border:none;flex:1;font-size:13px;padding:14px 16px;"/>
+          <button class="btn btn-primary" style="border:none;border-left:var(--border);font-size:11px;padding:0 18px;flex-shrink:0;">Avisar-me</button>
+        </div>
+
+        <div style="display:flex;gap:12px;">
+          <a href="index.html" class="btn btn-ghost" style="border:var(--border-thin);font-size:11px;padding:10px 16px;">← Início</a>
+          <a href="html/shop/shop.html" class="btn btn-ghost" style="border:var(--border-thin);font-size:11px;padding:10px 16px;">Ver Loja</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-bottom"><span>WOLSCHICKS STUDIO LTDA</span><div class="footer-payments"><span class="pay-badge">VISA</span><span class="pay-badge">MC</span><span class="pay-badge">PayPal</span></div></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Countdown simples
+    const target = new Date();
+    target.setDate(target.getDate() + 7);
+    target.setHours(target.getHours() + 14);
+
+    function update() {
+      const now = new Date();
+      const diff = target - now;
+      if (diff <= 0) return;
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      document.getElementById('cd-days').textContent  = String(d).padStart(2,'0');
+      document.getElementById('cd-hours').textContent = String(h).padStart(2,'0');
+      document.getElementById('cd-min').textContent   = String(m).padStart(2,'0');
+      document.getElementById('cd-sec').textContent   = String(s).padStart(2,'0');
+    }
+    update();
+    setInterval(update, 1000);
+  </script>
+</body>
+</html>

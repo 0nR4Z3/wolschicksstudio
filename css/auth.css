@@ -1,0 +1,115 @@
+/* ══════════════════════════════════════════
+   AUTH.CSS — Login & Sign Up
+   Wolschicks Studio
+══════════════════════════════════════════ */
+
+.auth-page {
+  min-height: calc(100vh - 124px);
+  display: flex; align-items: center; justify-content: center;
+  padding: clamp(40px, 6vw, 100px) clamp(20px, 4vw, 60px);
+}
+
+.auth-wrap {
+  display: flex; width: 100%; max-width: 960px;
+  border: var(--border);
+}
+
+/* painel esquerdo decorativo */
+.auth-deco {
+  flex: 1; border-right: var(--border);
+  display: flex; flex-direction: column; justify-content: space-between;
+  padding: clamp(32px, 4vw, 60px);
+  min-height: clamp(440px, 60vh, 660px);
+}
+.auth-deco-title {
+  font-family: 'AngelicWar', cursive;
+  font-size: clamp(32px, 5.5vw, 80px);
+  color: var(--white); line-height: 0.95;
+}
+.auth-deco-sub {
+  font-size: 10px; color: var(--white);
+  letter-spacing: 4px; text-transform: uppercase;
+  margin-top: 14px; opacity: 0.3;
+}
+.auth-deco-blocks { display: flex; flex-direction: column; gap: 10px; }
+.auth-deco-block { border: var(--border); height: clamp(36px, 5vw, 64px); }
+.auth-deco-block:nth-child(2) { opacity: 0.35; }
+.auth-deco-block:nth-child(3) { opacity: 0.12; }
+.auth-deco-foot {
+  font-size: 10px; color: var(--white);
+  letter-spacing: 2px; text-transform: uppercase; opacity: 0.15;
+}
+
+/* formulário */
+.auth-form {
+  flex: 1;
+  padding: clamp(32px, 4vw, 60px);
+  display: flex; flex-direction: column;
+  gap: clamp(20px, 2.5vw, 32px);
+}
+.auth-form-title {
+  font-family: Arial, sans-serif;
+  font-size: clamp(24px, 3.5vw, 48px);
+  font-weight: 700; color: var(--white);
+  text-transform: uppercase; letter-spacing: 4px;
+  border-bottom: var(--border);
+  padding-bottom: clamp(14px, 1.8vw, 22px); line-height: 1;
+}
+.auth-form-title span {
+  display: block; font-size: 10px; letter-spacing: 4px;
+  color: var(--white); opacity: 0.25; margin-top: 8px; font-weight: 400;
+}
+
+.form-row-2 { display: flex; gap: clamp(10px, 1.5vw, 18px); }
+.form-row-2 .form-group { flex: 1; }
+
+.form-inline {
+  display: flex; justify-content: space-between;
+  align-items: center; flex-wrap: wrap; gap: 10px;
+}
+.form-check {
+  display: flex; align-items: center; gap: 8px; cursor: pointer;
+  font-size: 11px; color: var(--white); opacity: 0.35;
+  letter-spacing: 2px; text-transform: uppercase;
+  transition: opacity 0.15s;
+}
+.form-check:hover { opacity: 1; }
+.form-check input[type="checkbox"] { accent-color: var(--white); width: 13px; height: 13px; cursor: pointer; }
+.form-link {
+  font-size: 11px; color: var(--white); text-decoration: none;
+  letter-spacing: 2px; text-transform: uppercase; opacity: 0.3;
+  transition: opacity 0.15s;
+}
+.form-link:hover { opacity: 1; }
+
+.form-divider {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--white); opacity: 0.2;
+}
+.form-divider::before, .form-divider::after {
+  content: ''; flex: 1; height: 1px; background: var(--white); opacity: 0.15;
+}
+
+.form-socials { display: flex; gap: 8px; }
+.btn-social {
+  flex: 1; background: var(--black); color: var(--white);
+  border: var(--border-thin);
+  font-family: Arial, sans-serif; font-size: 11px;
+  letter-spacing: 2px; text-transform: uppercase; padding: 12px 6px;
+  cursor: pointer; opacity: 0.25; transition: opacity 0.2s; text-align: center;
+}
+.btn-social:hover { opacity: 1; border: var(--border); }
+
+.auth-switch {
+  font-size: 11px; color: var(--white); opacity: 0.3;
+  letter-spacing: 1px; text-align: center;
+}
+.auth-switch a { color: var(--white); text-decoration: underline; opacity: 0.6; }
+.auth-switch a:hover { opacity: 1; }
+
+@media (max-width: 640px) {
+  .auth-deco { display: none; }
+  .auth-wrap { max-width: 100%; }
+  .form-row-2 { flex-direction: column; }
+}

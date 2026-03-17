@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finalizar Compra — Wolschicks Studio</title>
+  <link rel="stylesheet" href="../../css/global.css"/>
+  <link rel="stylesheet" href="../../css/pages.css"/>
+</head>
+<body>
+
+  <div class="browser-bar">
+    <div class="b-dots"><div class="b-dot"></div><div class="b-dot"></div><div class="b-dot"></div></div>
+    <div class="b-address"><span class="b-address-inner">finalizar compra · pagamento · endereço · wolschicks studio · finalizar compra · pagamento &nbsp;&nbsp;&nbsp;</span></div>
+    <div class="b-squares"><a class="b-sq" href="https://instagram.com" target="_blank"></a><a class="b-sq" href="https://twitter.com" target="_blank"></a><a class="b-sq" href="https://tiktok.com" target="_blank"></a><a class="b-sq" href="https://youtube.com" target="_blank"></a><a class="b-sq" href="https://behance.net" target="_blank"></a><a class="b-sq" href="https://linkedin.com" target="_blank"></a></div>
+  </div>
+
+  <div class="navbar">
+    <div class="nav-browse-wrap">
+      <button class="nav-browse-btn"><span class="nav-browse-icon">☰</span> NAVEGAR CATEGORIAS <span class="nav-browse-arrow">▾</span></button>
+      <div class="nav-dropdown">
+        <a href="categories.html" class="nav-drop-item">Todas as Categorias <span>›</span></a>
+        <a href="shop.html?cat=software" class="nav-drop-item">Software <span>›</span></a>
+        <a href="shop.html?cat=glitch" class="nav-drop-item">Glitch <span>›</span></a>
+        <a href="shop.html?cat=textures" class="nav-drop-item">Texturas &amp; Scans <span>›</span></a>
+        <a href="shop.html?cat=dither" class="nav-drop-item">Dither Boy</a>
+        <a href="shop.html?cat=flareware" class="nav-drop-item">Flareware</a>
+      </div>
+    </div>
+    <div class="nav-logo"><a href="../../index.html"><img src="../../assets/logo.png" alt="Wolschicks Studio"/></a></div>
+    <div class="nav-login"><a href="../auth/login.html">★ ENTRAR / CADASTRO ★</a></div>
+  </div>
+
+  <div class="breadcrumb">
+    <a href="../../index.html">Início</a><span>/</span>
+    <a href="cart.html">Carrinho</a><span>/</span>
+    Finalizar Compra
+  </div>
+
+  <div class="page-header">
+    <div class="page-header-title">Finalizar<br>Compra</div>
+    <div class="page-header-meta">
+      <div class="page-header-count">$80</div>
+      <div class="page-header-label">✦ total do pedido ✦</div>
+    </div>
+  </div>
+
+  <div class="checkout-layout">
+
+    <!-- FORMULÁRIO -->
+    <div class="checkout-form">
+
+      <div>
+        <div class="checkout-section-title">01 — Informações Pessoais</div>
+        <div class="checkout-grid">
+          <div class="form-group"><label class="label">Nome</label><input class="input" type="text" placeholder="Seu nome"/></div>
+          <div class="form-group"><label class="label">Sobrenome</label><input class="input" type="text" placeholder="Seu sobrenome"/></div>
+          <div class="form-group full"><label class="label">E-mail</label><input class="input" type="email" placeholder="seu@email.com"/></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="checkout-section-title">02 — Método de Pagamento</div>
+        <div class="payment-methods">
+          <label class="payment-method active">
+            <input type="radio" name="payment" checked/>
+            <span class="payment-method-label">Cartão de Crédito</span>
+            <div class="payment-method-icons"><span class="pay-icon">VISA</span><span class="pay-icon">MC</span></div>
+          </label>
+          <label class="payment-method">
+            <input type="radio" name="payment"/>
+            <span class="payment-method-label">PayPal</span>
+            <div class="payment-method-icons"><span class="pay-icon">PP</span></div>
+          </label>
+          <label class="payment-method">
+            <input type="radio" name="payment"/>
+            <span class="payment-method-label">PIX</span>
+            <div class="payment-method-icons"><span class="pay-icon">PIX</span></div>
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <div class="checkout-section-title">03 — Dados do Cartão</div>
+        <div class="checkout-grid">
+          <div class="form-group full"><label class="label">Número do Cartão</label><input class="input" type="text" placeholder="0000 0000 0000 0000"/></div>
+          <div class="form-group"><label class="label">Validade</label><input class="input" type="text" placeholder="MM/AA"/></div>
+          <div class="form-group"><label class="label">CVV</label><input class="input" type="text" placeholder="•••"/></div>
+          <div class="form-group full"><label class="label">Nome no Cartão</label><input class="input" type="text" placeholder="Como aparece no cartão"/></div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="window.location='download.html'">✦ Confirmar Pagamento ✦</button>
+
+    </div>
+
+    <!-- RESUMO DO PEDIDO -->
+    <div class="checkout-summary">
+      <div class="cart-summary-title">Seu Pedido</div>
+
+      <div class="checkout-order-item">
+        <div class="checkout-order-icon">◈</div>
+        <div class="checkout-order-name">Signal Collapse Pack</div>
+        <div class="checkout-order-price">$14</div>
+      </div>
+      <div class="checkout-order-item">
+        <div class="checkout-order-icon">▦</div>
+        <div class="checkout-order-name">Grain Library 01</div>
+        <div class="checkout-order-price">$18</div>
+      </div>
+      <div class="checkout-order-item">
+        <div class="checkout-order-icon">⚙</div>
+        <div class="checkout-order-name">GlitchForge Plugin</div>
+        <div class="checkout-order-price">$48</div>
+      </div>
+
+      <div style="margin-top:8px">
+        <div class="cart-summary-row"><span class="cart-summary-label">Subtotal</span><span class="cart-summary-val">$80</span></div>
+        <div class="cart-summary-row"><span class="cart-summary-label">Desconto</span><span class="cart-summary-val">— $0</span></div>
+        <div class="cart-summary-row cart-summary-total"><span class="cart-summary-label">Total</span><span class="cart-summary-val">$80</span></div>
+      </div>
+
+      <div style="font-size:10px;color:var(--white);opacity:0.2;letter-spacing:1px;line-height:1.8;">
+        ✦ Pagamento 100% seguro<br>
+        ✦ Acesso imediato após confirmação<br>
+        ✦ Licença comercial incluída<br>
+        ✦ Suporte por 12 meses
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-bottom"><span>WOLSCHICKS STUDIO LTDA</span><div class="footer-payments"><span class="pay-badge">VISA</span><span class="pay-badge">MC</span><span class="pay-badge">PayPal</span></div></div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
